@@ -4,8 +4,8 @@ import { addons } from '@storybook/addons';
 addons.setConfig({
   theme: {
     ...themes.dark,
-    brandImage: 'https://hamishw.com/icon.svg',
+    brandImage: '',
     brandTitle: 'Thanh Tan Components',
-    brandUrl: 'https://hamishw.com',
+    brandUrl: '',
   },
 });
