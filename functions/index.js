@@ -14,13 +14,11 @@ const ses = new aws.SES({
   region: 'us-east-1',
 });
 
-const ORIGIN = 'https://hamishw.com';
 const MAX_EMAIL_LENGTH = 512;
 const MAX_MESSAGE_LENGTH = 4096;
 
 app.use(helmet());
 app.use(express.json());
-app.use(cors({ origin: ORIGIN }));
 
 app.post('/message', async (req, res) => {
   try {
